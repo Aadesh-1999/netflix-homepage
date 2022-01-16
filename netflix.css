@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 12vh;
+}
+
+body {
+    /* background-image: url('netflix_bakground.png'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('netflix_bakground.png');
+}
+
+header>ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 2px red solid;
+    height: 100%;
+    justify-content: end;
+    padding: 3% 3%;
+}
+
+li {
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 2px black solid;
+    padding: 2%;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    font-family: serif;
+    text-align: center;
+    color: white;
+}
+
+.container>div {
+    margin: auto;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+.container>div>h1 {
+    font-size: 3em;
+    font-family: serif;
+    text-align: center;
+}
+
+input[type=email] {
+    width: 700px;
+    padding: 2% 5%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container>div>button {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-form-lockup{
+    display: flex;
+}
+li>img {
+    z-index: 0;
+}
