@@ -18,11 +18,20 @@
             <li id="logo" style="position: relative;">
                 <img src="netflix-logo1.png" alt="Netflix Logo" style="height: 150%;width: 300%;position: absolute;">
             </li>
-            <li id="languages">
-                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                <label class="for-dropdown" for="dropdown">Dropdown Menu <i class="uil uil-arrow-down"></i></label>
+            <li class="languages">
+                <select name="languages" id="languages" size="1">
+                    <i class="fas fa-globe"></i>
+                    <option selected="" value="/in/" data-language="en" data-country="IN" lang="en">
+                        <h1>
+                            &nbsp;&nbsp;English
+                        </h1>
+                    </option>
+                    <option value="/in-hi/" data-language="hi" data-country="IN" lang="hi"><h1>&nbsp;&nbsp;हिन्दी</h1></option>
+                  </select>
             </li>
-            <li id="login" style="background-color: red;color:white;"><i class="fas fa-globe"></i>&nbsp;&nbsp;Sign In</li>
+            <li id="login" type="submit">
+                <button type="submit">Sign In</button>
+            </li>
         </ul>
     </header>
     <div class="parent">
@@ -42,8 +51,8 @@
                        <input type="email" name="email" placeholder="Email address">
                     </li>
                     <li>
-                        <button class="btn btn-red" type="submit">
-                            <span class="cta-btn-txt">Get Started</span>
+                        <button id="getStarted" class="btn btn-red" type="submit">
+                            Get Started >
                         </button>
                     </li>
                 </ul>

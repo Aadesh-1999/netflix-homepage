@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;font-family:sans-serif, serif;
 }
 
 header {
@@ -17,7 +17,7 @@ header>ul {
     display: flex;
     align-items: center;
     list-style: none;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     height: 100%;
     justify-content: end;
     padding: 3% 3%;
@@ -28,8 +28,9 @@ li {
     display: flex;
     align-items: center;
     height: 100%;
-    border: 2px black solid;
-    padding: 2%;
+    /* border: 2px black solid; */
+    padding: 2%;font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
 }
 
 .parent {
@@ -63,18 +64,19 @@ li {
 
 .container>div>h1 {
     font-size: 3em;
-    font-family: serif;
+    font-family: "Lato", Arial, sans-serif;
     text-align: center;
 }
 
 input[type=email] {
-    width: 700px;
+    width: 33vw;
+    height: 8vh;
     padding: 2% 5%;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 0%;
+    font-size:large;
 }
 
 .container>div>button {
@@ -84,13 +86,41 @@ input[type=email] {
     padding: 5%;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 0%;
     cursor: pointer;
 }
 
-.email-form-lockup{
-    display: flex;
+.email-form-lockup>ul{
+    display: flex; justify-content: center;align-items: center;
+}
+.email-form-lockup>ul>li{
+    margin: 0;padding: 0;
 }
 li>img {
     z-index: 0;
+}
+select
+{
+width:100px;
+height: 35px;
+font-size: 15px;
+background: transparent;color: white;border: 1px white solid; border-radius: 3%;
+}
+option{background-color: lightgray;}
+#login>button{
+    background-color: #E50914;color:white;
+    width:7vw;padding: 2%;
+    height: 35px;
+    font-size: 16px;border: none; border-radius: 8%;
+    font-family:sans-serif, serif;
+}
+#getStarted{
+    background-color: #E50914;color:white;
+    border: none; border-radius: 0%;
+    height: 8vh;width:16vw;
+    font-size:x-large;
+}
+.fa{
+    content: '\f0ac' !important;
+    font-family: FontAwesome !important;
 }
